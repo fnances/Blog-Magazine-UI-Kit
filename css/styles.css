@@ -1,0 +1,144 @@
+/* line 21, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+div, section, h1, h2, h3, h4, h5, h6, p, span, main, aside, ul, li, nav, header, a, i, body {
+  color: #464F54;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* line 26, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+ul {
+  list-style-type: none; }
+
+/* line 28, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+a {
+  text-decoration: none; }
+
+/* line 31, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #455D77; }
+
+/* line 35, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap; }
+
+/* line 43, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+header {
+  flex-basis: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 67px;
+  background: #FDFDFD; }
+  /* line 51, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+  header h1 {
+    width: 0;
+    text-indent: -10000px;
+    height: 0; }
+  /* line 55, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+  header .main-navigation {
+    flex-basis: 100%;
+    justify-content: space-between;
+    display: flex; }
+    /* line 59, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+    header .main-navigation .nav-burger {
+      width: 60px;
+      height: auto;
+      background-color: #55CAC6;
+      text-align: center;
+      order: -5; }
+      /* line 65, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+      header .main-navigation .nav-burger i.fa-bars {
+        padding: 20px;
+        font-size: 27px;
+        color: #FDFDFD; }
+    /* line 70, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+    header .main-navigation ul {
+      flex-basis: calc(60% - 60px);
+      display: flex; }
+      /* line 73, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+      header .main-navigation ul li {
+        font-size: 17px;
+        padding: 22px;
+        flex: 1 1 0; }
+    /* line 80, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+    header .main-navigation .nav-social-icons {
+      flex-basis: 20%;
+      opacity: 0.77; }
+      /* line 83, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+      header .main-navigation .nav-social-icons li {
+        padding: 22px 10px; }
+        /* line 85, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+        header .main-navigation .nav-social-icons li i.fa {
+          color: #B0B7BB;
+          font-size: 17px; }
+      /* line 88, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+      header .main-navigation .nav-social-icons li:nth-child(1) {
+        padding-right: 20px;
+        margin-right: 20px;
+        border-right: 1px solid #B0B7BB; }
+      /* line 92, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+      header .main-navigation .nav-social-icons li:nth-child(5) {
+        padding-left: 30px;
+        margin-left: 20px;
+        padding-right: 30px;
+        border-left: 1px solid #B0B7BB; }
+        /* line 97, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+        header .main-navigation .nav-social-icons li:nth-child(5) i.fa {
+          font-size: 20px; }
+
+/* line 99, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+#head {
+  width: 100%;
+  margin-top: 1%;
+  display: flex; }
+  /* line 104, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+  #head .second-menu {
+    flex-basis: 224px; }
+    /* line 108, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+    #head .second-menu ul li {
+      display: flex;
+      padding: 10px;
+      width: 100%;
+      border-bottom: 1px solid #B0B7BB;
+      background-color: #FDFDFD; }
+      /* line 115, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+      #head .second-menu ul li a {
+        margin-left: 27px;
+        flex-basis: 70%;
+        font-size: 17px; }
+      /* line 119, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+      #head .second-menu ul li i.fa {
+        padding-left: 7%;
+        flex-basis: 30%;
+        font-size: 25px !important;
+        color: #C3CBCF;
+        opacity: 0.777; }
+  /* line 127, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+  #head .second-menu-submenu {
+    flex-basis: 240px; }
+    /* line 130, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+    #head .second-menu-submenu li {
+      background-color: #14273F;
+      line-height: 1.6em;
+      padding-bottom: 3px; }
+      /* line 134, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+      #head .second-menu-submenu li h3 {
+        display: flex;
+        justify-content: space-between;
+        border-top: solid 1px #55CAC6;
+        color: #55CAC6;
+        padding: 15px; }
+        /* line 141, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+        #head .second-menu-submenu li h3 i.fa {
+          color: #55CAC6;
+          font-size: 20px; }
+      /* line 144, C:/Users/ANTEK/Desktop/PSDS/Blog Magazine/sass/styles.sass */
+      #head .second-menu-submenu li a {
+        color: #FBFBFB;
+        padding: 15px 2px; }
+
+/*# sourceMappingURL=styles.css.map */

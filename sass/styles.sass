@@ -1,0 +1,461 @@
+$bg : #455D77
+$primarySea : #55CAC6
+$secondaryDarkBlue: #14273F
+$hoverMenuLighterBlue: #253953
+$facebookSquare: #4C6AA8
+$linkedInRound: #228AC6
+$SilverGrey: #C3CBCF
+$redish: #E85F5F
+$whiteishBG: #FDFDFD
+$greyish: #656C70
+$fontColorWhite: #FBFBFB
+$darkFontColor: #464F54
+$timeColor: #CBD0D2
+$font: 'Roboto', sans-serif;
+$navGrey: #B0B7BB
+$arrowContainerPosition: calc((100% - 930px)/2)
+$sliderCirclesPosition: calc((100% - 80px)/2)
+=clear
+    content: ''
+    display: block
+    clear: both
+=center
+    display: flex
+    justify-content: center
+    align-items: center
+.hover-bg
+    background-color: $primarySea !important
+.hover-color
+    color: $primarySea
+.circle-hover
+    background-color: $whiteishBG
+div,section,h1,h2,h3,h4,h5,h6,i,main,aside,ul,li,nav,header,a,body
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+ul
+    list-style-type: none
+a
+    text-decoration: none
+    color: inherit
+    cursor: pointer
+
+body
+    font-family: $font
+    background-color: $bg
+
+.wrapper
+    max-width: 930px
+    width: 100%
+    display: flex
+    margin: 0 auto
+    flex-wrap: wrap
+
+
+header
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    h1
+        width: 0
+        text-indent: -10000px
+        height: 0
+    .main-navigation
+        width: 100%
+        height: 70px
+        background: $whiteishBG
+        display: flex
+        color: $darkFontColor
+        justify-content: space-between
+
+        #nav-burger
+            width: 60px
+            height: auto
+            background-color: $primarySea
+            text-align: center
+            order: -5
+            i.fa-bars
+                padding: 20px
+                font-size: 27px
+                color: $whiteishBG
+
+        ul
+            // flex-basis: calc(60% - 60px)
+            display: flex
+
+            li
+                font-size: 17px
+                padding: 22px
+                flex: 1 1 0
+        .nav-social-icons
+            flex-basis: 20%
+            opacity: 0.77
+            li
+                padding: 22px 10px
+                i.fa
+                    color: $navGrey
+                    font-size: 17px
+            li:nth-child(1)
+                padding-right: 20px
+                margin-right: 20px
+                border-right: 1px solid $navGrey
+            li:nth-child(5)
+                padding-left: 30px
+                margin-left: 20px
+                padding-right: 30px
+                border-left: 1px solid $navGrey
+                i.fa
+                    font-size: 20px
+    .heading
+        display: flex
+        margin-top: 15px
+        flex-basis: calc(50% - 10px)
+        .second-menu
+            float:left
+            width: auto
+            ul
+                .active
+                    background-color: $primarySea
+                    a
+                        color: $whiteishBG !important
+                    i.fa
+                        color: $whiteishBG !important
+
+                li
+                    display: flex
+                    justify-content: space-around
+                    align-items: center
+                    width: 225px
+                    height: 60px
+                    border-bottom: 1px solid $navGrey
+                    background-color: $whiteishBG
+                    a
+
+                        flex-basis: 65%
+                        font-size: 17px
+                    i.fa
+
+                        padding-left: 10px
+                        align-self: center
+                        font-size: 25px !important
+                        color: $SilverGrey
+                        opacity: 0.777
+        .company-info
+            background-color: $SilverGrey
+            height: 260px
+            width: 225px
+            font-size: 13px
+            display: flex
+            flex-flow: wrap
+            justify-content: space-around
+            align-items: center
+
+
+            .company
+                font-size: 14px
+                width: 70%
+
+                text-align: center
+                line-height: 1.6em
+                flex-basis: 70%
+                color: $fontColorWhite
+            .fa
+                color: $fontColorWhite
+                font-size: 30px
+                width: 25px
+                padding-left: 20px
+                flex-basis: 30%
+            .fa-phone
+                font-size: 40px
+            .fa-map-marker
+                font-size: 40px
+
+        .second-menu-submenu
+            float:left
+            ul:hover
+                li
+                    background-color: #263A54
+
+            ul
+                li:last-child
+                    box-sizing: initial
+                    padding-bottom: 27.75px
+                li
+                    display: flex
+                    height: 25px
+                    align-items: center
+                    width: 240px
+                    padding-bottom: 5px
+                    border: none
+                    background-color: $secondaryDarkBlue
+                    a
+                        color: $fontColorWhite
+                        font-size: 15px
+                        padding-left: 25px
+
+
+                .submenu-header
+
+                    box-sizing: initial
+                    display: flex
+                    padding-top: 25px
+                    padding-bottom: 10px
+                    justify-content: space-between
+                    border-top: solid 1px #49657F
+                    h3
+                        flex-basis: 20%
+                        padding-left: 25px
+
+
+                        font-weight: normal
+                        color: $primarySea
+                    i.fa
+                        color: $primarySea
+                        font-size: 20px
+                        flex-basis: 15%
+
+
+
+
+    .community
+
+        width: 50%
+        .social-list
+            margin: 15px 15px 0 15px
+            float: left
+            width: 220px
+            height: 315px
+            background-color: $fontColorWhite
+            ul
+                display: flex
+                justify-content: space-around
+                flex-direction: column
+                height: 100%
+                li
+
+                    display: flex
+                    justify-content: space-around
+                    align-items: center
+
+
+                    a
+                        font-size: 17px
+                        flex-basis: 50%
+                    .roundSocials
+                        +center
+                        width: 40px
+                        height: 40px
+                        border: 1px solid #FFFFFF
+                        border-radius: 50%
+                        background-color: $SilverGrey
+
+                        i.fa
+
+                            font-size: 20px
+                            color: #FFFFFF
+                    a:hover
+                        color: $primarySea
+
+
+        .medium-tile
+            margin: 15px 0px 0px 15px
+            float: left
+            width: 450px
+            height: 167px
+            background-color: $whiteishBG
+            text-align: center
+            input[name="emailAddress"]
+                    width: 60%
+                    margin-right: 1%
+                    height: 40px
+                    margin-top: 5px
+                    border-radius: 5px
+                    border: 1px solid $SilverGrey
+            ::-webkit-input-placeholder  /* Chrome/Opera/Safari */
+                padding-left: 20px
+                font-size: 15px
+                font-family: $font
+            ::-moz-placeholder  /* Firefox 19+ */
+                padding-left: 20px
+                font-size: 15px
+                font-family: $font
+            :-ms-input-placeholder /* IE 10+ */
+                padding-left: 20px
+                font-size: 15px
+                font-family: $font
+            :-moz-placeholder  /* Firefox 18- */
+                padding-left: 20px
+                font-size: 15px
+                font-family: $font
+
+            input[name="signUpBtn"]
+                    width: 28%
+                    margin-left: 1%
+                    margin-top: 5px
+                    height: 40px
+                    color: $fontColorWhite
+                    background-color: $redish
+                    border-radius: 5px
+            header
+                padding-top: 20px
+                +center
+                h2,p
+                    font-weight: 400
+                    flex-basis: 100%
+                    color: $darkFontColor
+            ul
+                display: flex
+                width: 50%
+                margin: 0 auto
+                justify-content: space-around
+                align-content: center
+                li
+                    padding-top: 15px
+
+                    i.fa
+                        color: $fontColorWhite
+                        width: 30px
+                        +center
+                        border: 1px solid transparent
+                        border-radius: 50%
+                        height:  30px
+                        font-size: 17px
+
+                    .fa-facebook
+                        background-color: $facebookSquare
+                    .fa-twitter
+                        background-color: $primarySea
+                    .fa-google-plus
+                        background-color: $redish
+                    .fa-linkedin
+                        background-color: $linkedInRound
+        .tile
+            margin-top: 15px
+            position: relative
+            float: left
+            width: 215px
+            height: 150px
+            i.fa
+                color: $fontColorWhite
+            i.fa.fa-facebook, .fa-twitter
+                font-size: 50px
+                padding: 17px
+            span
+                position: absolute
+                bottom:  0
+                left: 0
+                padding: 20px
+                color: $fontColorWhite
+                font-weight: 600
+            .followers
+                +clear
+                display: flex
+                position: absolute
+                width: 50%
+                right: 0
+                justify-content: space-around
+                align-content: center
+                float: right
+                padding: 10px
+                color: $fontColorWhite
+
+                i.fa
+                    font-size: 20px
+                // .plus
+                //     +center
+                //     border: 2px solid white
+                //     border-radius: 50%
+                //     width: 20px
+                //     height: 20px
+                //     font-size: 20px
+                //     color: $fontColorWhite
+            // &:first-child
+            //     flex-basis: 40%
+            //     align-self: center
+
+        .facebook
+            background: $facebookSquare
+
+
+        .twitter
+            background: $primarySea
+        +clear
+
+// -------------------------------HEADER EMD -----------//
+main
+    margin-top: 15px
+    #slider
+        position: relative
+        width: 930px
+        height: 450px
+        overflow: hidden
+        .sliderContent
+            height: 450px
+            width: 3720px
+            .slide1
+                background: url(/images/slide2.jpg) no-repeat center
+            .slide2
+                background: url(/images/slide2.jpg) no-repeat center
+            .slide3
+                background: url(/images/slide3.jpg) no-repeat center
+            .slide4
+                background: url(/images/slide4.jpg) no-repeat center
+
+            .sliderNews
+                width: 930px
+                float: left
+                height: 450px
+                color: $fontColorWhite
+                .sliderHeader, .sliderDescription, .sliderBtn
+                    padding: 25px 0px 0px 70px
+                    margin: 0
+                .sliderHeader
+                    font-weight: 300
+                    font-size: 55px
+                .sliderDescription
+                    font-weight: 300
+                    line-height: 1.6em
+                    font-size: 13px
+                .sliderBtn
+                    display: table
+                    font-weight: 500
+                    text-transform: uppercase
+                    margin-left: 70px
+                    margin-top: 20px
+                    padding: 15px 40px
+                    border: 1px solid $whiteishBG
+                    border-radius: 5px
+                    cursor: pointer
+        .arrowContainer
+            display: flex
+            margin-top: 150px
+            z-index: 500
+            position: absolute
+            left: 0
+            bottom: calc((450px - 50px)/2)
+            width: 930px
+            flex-basis: 100%
+            justify-content: space-between
+            i.fa
+                +center
+                height: 50px
+                cursor: pointer
+                width: 35px
+                background-color: $whiteishBG
+                color: $SilverGrey
+            i.fa.fa-chevron-right
+
+            i.fa.fa-chevron-left
+        .sliderCircles
+            position: absolute
+            bottom: 15px
+            left: $sliderCirclesPosition
+            justify-content: space-between
+            display: flex
+            .circle
+                width: 15px
+                margin-left: 5px
+                height: 15px
+                border-radius: 50%
+                border: 2px solid white
+                cursor: pointer
